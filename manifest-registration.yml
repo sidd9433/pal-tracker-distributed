@@ -2,7 +2,7 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-sid-mukherjee-sid-mukherjee.cfapps.io
+  - route: registration-pal-sid-mukherjee.cfapps.io
   memory: 1G
   instances: 1
   env:
