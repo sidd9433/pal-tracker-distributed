@@ -2,9 +2,9 @@ import io.pivotal.pal.tracker.gradlebuild.DependenciesGraphPlugin
 
 buildscript {
     ext {
-        springBootVersion = "2.2.0.RELEASE"
-        springVersion = "5.0.9.RELEASE"
-        mysqlVersion = "8.0.13"
+        springBootVersion = "2.2.2.RELEASE"
+        springVersion = "5.2.2.RELEASE"
+        mysqlVersion = "8.0.18"
         jacksonVersion = "2.9.7"
         slf4jVersion = "1.7.25"
         mockitoVersion = "2.23.0"
@@ -23,7 +23,7 @@ buildscript {
 
     dependencies {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
-        //classpath "mysql:mysql-connector-java:$mysqlVersion"
+        classpath "mysql:mysql-connector-java:$mysqlVersion"
     }
 }
 
@@ -41,7 +41,6 @@ subprojects {
     }
 
     dependencies {
-        implementation 'mysql:mysql-connector-java'
         compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
         compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
         compile "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
