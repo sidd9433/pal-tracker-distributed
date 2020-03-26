@@ -9,7 +9,7 @@ applications:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
     GRANT_TYPES: client_credentials
   services:
-    - tracker-registration-database
-    - tracker-service-registry
-    - tracker-sso
-    - tracker-config-server
+  - tracker-registration-database
+  - tracker-service-registry
+  - tracker-sso
+  - tracker-config-server
